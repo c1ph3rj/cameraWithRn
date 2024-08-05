@@ -6,6 +6,24 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Camera app to access your camera",
+          "microphonePermission": "Allow Camera app to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Camera app to access your photos.",
+          "savePhotosPermission": "Allow Camera app to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
